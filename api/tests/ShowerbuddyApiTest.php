@@ -1,11 +1,13 @@
 <?php
 use App\OccupiedState;
+use Laravel\Lumen\Testing\DatabaseTransactions;
 
 /**
  * Class ShowerbuddyApiTest
  */
 class ShowerbuddyApiTest extends TestCase
 {
+    use DatabaseTransactions;
 
     public function testModelCanChangeStateAndSaveToDatabase()
     {

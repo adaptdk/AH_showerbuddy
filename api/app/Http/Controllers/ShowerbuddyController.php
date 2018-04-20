@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\OccupiedState;
+use Laravel\Lumen\Testing\DatabaseTransactions;
 
 /**
  * Class ShowerbuddyController
