@@ -2,7 +2,7 @@
 Adapt Hackathon - proof of concept, when is the shower free
 
 The goal of the project is to create a IoT device, coupled with a online service
-that will let out runners know when the shower is free.
+that will let out runners know when the shower is occupied.
 
 Each team will have a tiny Arduino controller, a bread board and a bunch
 of wires available. The controller has build in wifi and bluetooth so it's
