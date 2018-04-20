@@ -2,6 +2,8 @@
 
 namespace App\Http\Controllers;
 
+use App\OccupiedState;
+
 /**
  * Class ShowerbuddyController
  *
@@ -17,13 +19,7 @@ class ShowerbuddyController extends Controller
      */
     public function currentState()
     {
-        return ['isOccupied' => ! rand(0, 1)];
-    }
-
-    public function setAsOccupied()
-    {
-        // Set the isOccupied state to true
-        return true;
+        return ['isOccupied' => OccupiedState::isOccupied()];
     }
 
 }
