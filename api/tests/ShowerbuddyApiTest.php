@@ -1,24 +1,16 @@
 <?php
 
-use Laravel\Lumen\Testing\DatabaseMigrations;
-use Laravel\Lumen\Testing\DatabaseTransactions;
-
-class ExampleTest extends TestCase
+/**
+ * Class ShowerbuddyApiTest
+ */
+class ShowerbuddyApiTest extends TestCase
 {
-    /**
-     * A basic test example.
-     *
-     * @return void
-     */
-    public function testExample()
+
+    public function testCanReturnCurrentStateFromApi()
     {
         $this->get('/api/state');
-        $response = $this->response->getContent();
+        $this->assertResponseOk();
         $this->assertJson($this->response->getContent());
-
-
-        //$this->assertEquals(
-        //    $this->app->version(), $this->response->getContent()
-        //);
     }
+
 }
