@@ -1,5 +1,5 @@
 # AH_showerbuddy
-Adapt Hackathon - proof of concept, when is the shower free
+Adapt Hackathon - proof of concept, when is the shower occupied.
 
 The goal of the project is to create a IoT device, coupled with a online service
 that will let out runners know when the shower is occupied.
