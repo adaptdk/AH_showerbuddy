@@ -6,7 +6,7 @@
     <script>
         setTimeout(() => {
             location.reload();
-        }, 10000);
+        }, 3000);
     </script>
         <h1 style="font-weight:normal;text-align:center; color:white;">
         Så der fandeme <b><?php echo \App\OccupiedState::isOccupied() ? 'Optaget' : 'Ledigt' ?></b>
