@@ -12,10 +12,13 @@ class ExampleTest extends TestCase
      */
     public function testExample()
     {
-        $this->get('/');
+        $this->get('/api/state');
+        $response = $this->response->getContent();
+        $this->assertJson($this->response->getContent());
 
-        $this->assertEquals(
-            $this->app->version(), $this->response->getContent()
-        );
+
+        //$this->assertEquals(
+        //    $this->app->version(), $this->response->getContent()
+        //);
     }
 }
