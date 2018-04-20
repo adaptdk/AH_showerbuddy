@@ -8,7 +8,7 @@
             location.reload();
         }, 1000);
     </script>
-        <h1 style="font-weight:normal;text-align:center; color:white;">
+        <h1 style="font-weight:normal;text-align:center; color:white;font-size:120px">
         Så der fandeme <b><?php echo \App\OccupiedState::isOccupied() ? 'Optaget' : 'Ledigt' ?></b>
         </h1>
     </body>
