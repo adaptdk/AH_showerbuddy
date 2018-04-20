@@ -37,6 +37,7 @@ void loop() {
 		return;
 	}
 
+	lastSensorValue = sensorValue;
 	Serial.println(sensorValue);
 
 	String requestUrl = BASEURL + (sensorValue == 1) ? 'occupied' : 'vacant';
